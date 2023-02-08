@@ -1,0 +1,121 @@
+{
+    "router": {
+        "link": {
+            "home:page": {
+                "path": "/"
+            },
+            "page:list": {
+                "path": "/page"
+            },
+            "page:single": {
+                "path": "/page/:id"
+            },
+            "blog:list": {
+                "path": "/blog"
+            },
+            "blog:single": {
+                "path": "/blog/:id"
+            },
+            "blog:single-x": {
+                "path": "/blog/:year/:month/:id"
+            },
+            "product:list": {
+                "path": "/product"
+            },
+            "product:single": {
+                "path": "/product/:id"
+            },
+            "author:list": {
+                "path": "/author"
+            },
+            "author:single": {
+                "path": "/author/:id"
+            },
+            "tag:list": {
+                "path": "/tag"
+            },
+            "tag:single": {
+                "path": "/tag/:id"
+            },
+            "category:list": {
+                "path": "/category"
+            },
+            "category:single": {
+                "path": "/category/:id"
+            },
+            "account:register": {
+                "path": "/cgi-bin/account/register"
+            },
+            "account:login": {
+                "path": "/cgi-bin/account/login"
+            },
+            "account:logout": {
+                "path": "/cgi-bin/account/logout"
+            },
+            "account:profile": {
+                "path": "/cgi-bin/account/profile"
+            }
+        },
+        "slot": [
+            "/",
+            "/about"
+        ]
+    },
+    "layout": [
+        "control-panel",
+        "default",
+        "layout:slot"
+    ],
+    "component": [
+        "component:slot",
+        "media-player:audio",
+        "media-query:line",
+        "media-query:screen"
+    ],
+    "element": [
+        "element:slot"
+    ],
+    "asset": {
+        "meta": [],
+        "link": [
+            {
+                "rel": "stylesheet",
+                "href": "/theme/accent.css"
+            },
+            {
+                "rel": "stylesheet",
+                "href": "/theme/style.css"
+            },
+            {
+                "href": "/css/app.55df16ea.css",
+                "rel": "stylesheet"
+            }
+        ],
+        "script": [
+            {
+                "defer": "defer",
+                "src": "/js/chunk-vendors.4b3a916e.js"
+            },
+            {
+                "defer": "defer",
+                "src": "/js/app.6eba8b33.js"
+            }
+        ]
+    },
+    "theme": {},
+    "package": {
+        "config": {
+            "web:browser": true,
+            "web:socket": false,
+            "web:socket/timeout": 5,
+            "start:timeout": 5,
+            "prop_watch": false
+        },
+        "body": {
+            "font": "",
+            "theme": "regular"
+        }
+    },
+    "name": "",
+    "version": "0.0.0"
+}
